@@ -23,6 +23,21 @@
             <version>2.4.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>9.4.26.v20200117</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.45.Final</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-atinject_1.0_spec</artifactId>
@@ -85,7 +100,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.example.main.EchoServer</mainClass>
+                            <mainClass>AppServer</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -96,14 +111,14 @@
                 <version>1.2.1</version>
                 <executions>
                     <execution>
-                        <id>EchoServer</id>
+                        <id>Main</id>
                         <goals>
                             <goal>java</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>org.example.RaptorMunch.EchoServer</mainClass>
+                    <mainClass>org.example.RaptorMunch.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
